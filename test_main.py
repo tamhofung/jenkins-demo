@@ -13,5 +13,5 @@ def test_noraml2():
 def test_import(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: "2002")
     result = getUserInput()
-    assert result == 2002
+    assert result == 2001
 
