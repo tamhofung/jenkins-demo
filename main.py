@@ -10,7 +10,12 @@ def CheckLeap(Year):
   else:  
     print ("Given Year is not a leap Year")
     return False
-# Taking an input year from user  
-Year = int(input("Enter the number: "))  
-# Printing result  
-CheckLeap(Year)
+
+def getUserInput():
+  Year = int(input("Enter the number: ")) 
+  return Year
+
+if __name__ == '__main__':
+  # Taking an input year from user  
+  # Printing result  
+  CheckLeap(getUserInput())
