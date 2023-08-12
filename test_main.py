@@ -4,7 +4,7 @@ from main import getUserInput
 import sys
 
 @pytest.mark.parametrize("arg", [2001, 2003, 1998])
-def test_noraml():
+def test_noraml(arg):
     assert CheckLeap(2001) == False
 
 def test_noraml2():
