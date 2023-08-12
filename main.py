@@ -12,8 +12,12 @@ def CheckLeap(Year):
     return False
 
 def getUserInput():
-  Year = int(input("Enter the number: ")) 
-  return Year
+  userinput = input("Enter the number: ")
+  if userinput.isdigit():
+    Year = int(userinput)
+    return Year
+  else:
+    return "error"
 
 if __name__ == '__main__':
   # Taking an input year from user  
